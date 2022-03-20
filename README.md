@@ -1,2 +1,2 @@
-# Astrid
+# Astra
 From the begining
