@@ -1,0 +1,17 @@
+{
+    "greetings":[
+        "hello",
+        "hi",
+        "hey",
+        "howdy",
+        "hey there",
+        "Ayoo"
+    ],
+    "valedictations":[
+        "goodbye",
+        "bye",
+        "see ya",
+        "goodnight",
+        "see you later"
+    ]
+}
