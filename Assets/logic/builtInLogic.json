@@ -1,17 +1,21 @@
 {
     "greetings":[
-        "hello",
-        "hi",
-        "hey",
-        "howdy",
-        "hey there",
-        "Ayoo"
+        "Hello",
+        "Hi",
+        "Hey",
+        "Howdy",
+        "Hey there",
+        "Ayoo",
+        "Hi there"
     ],
     "valedictations":[
-        "goodbye",
-        "bye",
-        "see ya",
-        "goodnight",
-        "see you later"
+        "Goodbye",
+        "Bye",
+        "See ya",
+        "See you later"
+    ],
+    "questionFormat":[
+        "?",
+        "what",
     ]
 }
