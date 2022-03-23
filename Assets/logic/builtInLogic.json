@@ -8,7 +8,7 @@
         "Ayoo",
         "Hi there"
     ],
-    "valedictations":[
+    "valedictions":[
         "Goodbye",
         "Bye",
         "See ya",
@@ -16,6 +16,6 @@
     ],
     "questionFormat":[
         "?",
-        "what",
+        "what"
     ]
 }
