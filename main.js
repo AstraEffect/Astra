@@ -4,12 +4,12 @@ const loadMainWindow = () => {
     const mainWindow = new BrowserWindow({
         width : 1200,
         height: 800,
+        frame: false,
         webPreferences: {
             nodeIntegration: true
-        },
-        frame: false
+        }
     });
-    mainWindow.loadFile(path.join(__dirname, '/.index.html'));
+    mainWindow.loadFile(path.join(__dirname, 'index.html'));
 }
 app.on('ready', loadMainWindow);
 app.on('window-all-closed', () => {
