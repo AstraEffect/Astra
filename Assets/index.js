@@ -10,13 +10,14 @@ let assumeIncludesEmoji = false
 let currentCheck = 0
 let userInputLength = 0
 
-
-// lowerRawUserInput = rawUserInput.toLowerCase()
-// userInput = lowerRawUserInput.split(' ')
-// userInputLength = userInput.length()
-// determineInput()
-// checkIncludesEmoji()
-// checkValidationValues()
+function processInput() {
+    lowerRawUserInput = rawUserInput.toLowerCase()
+    userInput = lowerRawUserInput.split(' ')
+    userInputLength = userInput.length
+    determineInput()
+    checkIncludesEmoji()
+    checkValidationValues()
+}
 
 // if (assumeQuestion == true) {
 //     processQuestion()
