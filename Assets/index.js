@@ -1,4 +1,4 @@
-let rawUserInput = '' // The raw user input - import ?
+let rawUserInput = ''
 let lowerRawUserInput = 0
 let userInput = 0
 let assumeQuestion = false
