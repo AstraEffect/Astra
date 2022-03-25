@@ -9,10 +9,14 @@ let userInputLength = 0
 let questionFormatLength = 0
 
 function processInput() {
+    rawUserInput = document.getElementById("rawUserInputHtml").value;
     questionFormatLength = builtInLogic.questionFormat.length
     lowerRawUserInput = rawUserInput.toLowerCase()
     userInput = lowerRawUserInput.split(' ')
     userInputLength = userInput.length
+    console.log(' ')
+    console.log('Debug: Now processing: ' + rawUserInput)
+    console.log(' ')
     determineInput()
     checkIncludesEmoji()
     checkValidationValues()
