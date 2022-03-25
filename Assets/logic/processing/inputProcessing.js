@@ -5,10 +5,21 @@ function determineInput() {
         console.log('Debug: Determined if statement ' + assumeStatement);
         console.log('Debug: Determined if question ' + assumeQuestion);
     } else {
-        assumeQuestion = false;
-        assumeStatement = true;
-        console.log('Debug: Determined if statement ' + assumeStatement);
-        console.log('Debug: Determined if question ' + assumeQuestion);
+        currentCheck = 0
+        while (currentCheck <= questionFormatLength) {
+            if (userInput[0] == builtInLogic.questionFormat[currentCheck]) {
+                assumeQuestion = true;
+                assumeStatement = false;
+                console.log('Debug: Determined if statement ' + assumeStatement);
+                console.log('Debug: Determined if question ' + assumeQuestion);
+                return;
+            } else {
+                assumeQuestion = false;
+                assumeStatement = true;
+            }
+            currentCheck = currentCheck + 1;
+            console.log('Debug: Determining if question - pass ' + currentCheck + ' of ' + questionFormatLength);
+        };
     };
 };
 
