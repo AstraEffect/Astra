@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 * {
     font-family:'Shadows Into Light', cursive;
+    font-size: 25px;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
 
 
 .rawUserInputHtml {
+    font-size: 15px;
     position: relative;
     margin: 0 auto;
     width: 50%;

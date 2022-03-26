@@ -20,7 +20,7 @@ function determineInput() {
 };
 
 function checkIncludesEmoji() {
-    if (rawUserInput.includes(':')) {
+    if (rawUserInput.includes(':') || rawUserInput.includes(';')) {
         assumeIncludesEmoji = true;
     } else {
         assumeIncludesEmoji = false;
@@ -33,6 +33,11 @@ function checkValidationValues() {
         console.log('Debug: Determined if question ' + assumeQuestion);
         console.log('Debug: Determined if includes emoji ' + assumeIncludesEmoji);
         console.log('Debug: Determined if question or statement; Question:' + assumeQuestion + ' Statement: ' + assumeStatement);
+        if (assumeQuestion == true) {
+            inputType = 'question';
+        } else {
+            inputType = 'statement';
+        };
     } else {
         let errorMessage = "Error: Could not determine if (' + rawUserInput + ') is a statement or a question.";
         return errorMessage;
