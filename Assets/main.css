@@ -1,3 +1,14 @@
 body {
+    -webkit-animation: fadeIn 3.4s; /* electron */
+            animation: fadeIn 3.4s;
     background-color: #494848;
+}
+
+h1 {
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
