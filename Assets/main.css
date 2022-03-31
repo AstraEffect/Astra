@@ -1,14 +1,17 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 body {
-    -webkit-animation: fadeIn 3.4s; /* electron */
+    -webkit-animation: fadeIn 3.4s;
+    -moz-animation: fadeIn 3.4s;
+    -ms-animation: fadeIn 3.4s;
+    -o-animation: fadeIn 3.4s;
             animation: fadeIn 3.4s;
     background-color: #494848;
 }
 
 h1 {
     text-align: center;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
