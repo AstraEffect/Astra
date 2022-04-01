@@ -3,7 +3,57 @@
     to   { opacity: 1; }
 }
 
+@keyframes appear {
+	1% {scale: 0;}
+	40% {scale: 0;}
+	100% {scale: 1;}
+}
+.moto {
+	padding: 40px;
+  color: #fff;
+
+}
+
+.card-content {
+	opacity: 1;
+}
+
+.card {
+	opacity: 1;
+	color: #fff;
+	position: relative;
+	background: #662668c2;
+	height: 280px;
+	max-width: 600px;
+	margin: auto;
+	border-radius: 10%;
+	margin-top: 10%;
+    text-align: center;
+    font-family: Clip;
+    -webkit-animation: appear 6s;
+    -moz-animation: appear 6s;
+    -ms-animation: appear 6s;
+    -o-animation: appear 6s;
+    animation: appear 6s;
+}
+
+.card:before {
+	color: #fff;
+	border-radius: 10%;
+	content: '';
+	position: absolute;
+	background: #662668d7;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: 0 4px 8px 0 #0db5df;
+	filter: blur(10px);
+
+}
+
 body {
+	background-attachment: fixed;
     -webkit-animation: fadeIn 3.4s;
     -moz-animation: fadeIn 3.4s;
     -ms-animation: fadeIn 3.4s;
@@ -12,12 +62,71 @@ body {
     background-color: #351336;
 }
 
-h1, h2, h3, p {
+h1 {
     text-align: center;
     color: #ff65bd;
-    padding: 140px;
+    /* padding: 140px; */
 }
 
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
 
 .sign {
   position: absolute;
