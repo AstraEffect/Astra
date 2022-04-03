@@ -18,4 +18,4 @@ MacOS | ✖
 Check out the [docs](http://docs.atsraeffect.co.uk)
 
 \**Astra can be run on windows but it has not been tested and is not directly supported.* <br>
-*Support will not be given untill moved into a further phase ang then an offical executable will be made and distributed.*
+*Support will not be given untill moved into a further phase and then an offical executable will be made and distributed.*
