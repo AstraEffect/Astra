@@ -31,11 +31,10 @@ function processInput() {
 };
 
 function firstTimeRun() {
-    // redirct to a windowwith video of animation that then redirects you back when over 
+    // redirect to a window with video of animation that then redirects you back when over
 }
 
 function astraSetup() {
-    hasRunBefore = getCookie('hasRunBefore')
     console.log('Debug: Astra version: ' + astraInfo.version);
     console.log('Debug: Has run before: ' + hasRunBefore)
     if (hasRunBefore != 'true') {
