@@ -12,6 +12,7 @@ let body = document.getElementById("body");
 let form = document.getElementById("inputBar");
 function handleForm(event) { event.preventDefault(); processInput();} 
 form.addEventListener('submit', handleForm);
+let hasRunBefore = 0
 
 function processInput() {
     rawUserInput = document.getElementById("rawUserInputHtml").value;
@@ -34,11 +35,12 @@ function firstTimeRun() {
 }
 
 function astraSetup() {
+    hasRunBefore = getCookie('hasRunBefore')
     console.log('Debug: Astra version: ' + astraInfo.version);
-    console.log('Debug: First time run: ' + astraInfo.hasRunBefore);
-    if (astraInfo.hasRunBefore == 'false') {
+    console.log('Debug: Has run before: ' + hasRunBefore)
+    if (hasRunBefore != 'true') {
         console.log('Debug: Astra has not been run before. Setting up...');
-        astraInfo.hasRunBefore = 'true';
+        document.cookie='hasRunBefore=true'
         firstTimeRun();
     } else {
         console.log('Debug: Astra has been run before. Using previous session data.');
