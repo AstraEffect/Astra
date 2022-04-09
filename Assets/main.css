@@ -8,6 +8,13 @@
 	40% {scale: 0;}
 	100% {scale: 1;}
 }
+
+@keyframes appear2 {
+  1% {transform: scale(0);}
+  40% {transform: scale(0);}
+  100% {transform: scale(1);}
+}
+
 .moto {
 	padding: 40px;
   color: #fff;
@@ -30,11 +37,12 @@
 	margin-top: 10%;
     text-align: center;
     font-family: Clip;
-    -webkit-animation: appear 6s;
+    -webkit-animation: appear2 6s;
     -moz-animation: appear 6s;
-    -ms-animation: appear 6s;
-    -o-animation: appear 6s;
+    -ms-animation: appear2 6s;
+    -o-animation: appear2 6s;
     animation: appear 6s;
+    animation: appear2 6s;
 }
 
 .card:before {
