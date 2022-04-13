@@ -2,14 +2,14 @@ const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const loadMainWindow = () => {
     const mainWindow = new BrowserWindow({
-        width : 1200,
-        height: 800,
+        width : 960,
+        height: 540,
         frame: false,
         webPreferences: {
             nodeIntegration: true
         }
     });
-    mainWindow.loadFile(path.join(__dirname, 'index.html'));
+    mainWindow.loadFile(path.join(__dirname, 'splash.html'));
 }
 app.on('ready', loadMainWindow);
 app.on('window-all-closed', () => {
