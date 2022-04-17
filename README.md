@@ -5,11 +5,11 @@ From the beginning
 
 ## Who ?
 Astra is a local machine learning AI. <br>
-Using the [Alli Engine]() task proccessing is a realiable reality.
+Using the [Alli Engine]() task processing is a reliable reality.
 
 <br>
 
-OS    |    Compatable
+OS    |    Compatible
 ------|--------------
 Linux | ✔️
 Windows | ➖ *
@@ -18,4 +18,4 @@ MacOS | ✖
 Check out the [docs](http://docs.atsraeffect.co.uk)
 
 \**Astra can be run on windows but it has not been tested and is not directly supported.* <br>
-*Support will not be given untill moved into a further phase and then an offical executable will be made and distributed.*
+*Support will not be given until moved into a further phase and then an official executable will be made and distributed.*
