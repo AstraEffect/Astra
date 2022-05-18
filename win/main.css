@@ -1,0 +1,28 @@
+.welcome {
+    animation: appear 1s ease-in-out;
+}
+.robert {
+    animation: appear 2.5s ease-in-out;
+}
+.youAre {
+    animation: appear 4s ease-in-out;
+}
+.pointless {
+    animation: appear 5.5s ease-in-out;
+}
+.similar {
+    animation: appear 7s ease-in-out;
+}
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
