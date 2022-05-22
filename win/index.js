@@ -11,7 +11,7 @@ var canvas = document.getElementById("canvas"),
         x: width / 2,
         y: height - 15,
         width: 5,
-        height: 5,
+        height: 10,
         speed: 3,
         velX: 0,
         velY: 0,
@@ -103,6 +103,22 @@ function update() {
         // left
         if (player.velX > -player.speed) {
             player.velX--;
+        }
+    }
+    if (keys[81]) {
+        // Q
+        if (player.width > 5){
+            player.width = player.width - 5;
+        } else {
+            player.width = 5;
+        }
+    }
+    if (keys[69]) {
+        // E
+        if (player.width < 200){
+            player.width = player.width + 5;
+        } else {
+            player.width = 200;
         }
     }
 
