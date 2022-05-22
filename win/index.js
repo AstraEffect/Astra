@@ -85,7 +85,7 @@ canvas.width = width;
 canvas.height = height;
 
 function update() {
-    if (keys[87] || keys[32] || keys[38]) {
+    if (keys[32] || keys[38]) {
         // up
         if (!player.jumping && player.grounded) {
             player.jumping = true;
@@ -119,6 +119,23 @@ function update() {
             player.width = player.width + 5;
         } else {
             player.width = 200;
+        }
+    }
+    if (keys[87]) {
+        // W
+        if (player.height < 90){
+            player.height = player.height + 5;
+        } else {
+            player.height = 90;
+        }
+    }
+    if (keys[83]) {
+        // S
+        if (player.height > 10){
+            player.height = player.height - 5;
+            player.y = player.y + 5;
+        } else {
+            player.height = 10;
         }
     }
 
