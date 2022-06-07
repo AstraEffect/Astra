@@ -1,332 +1,345 @@
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes appear {
-	1% {scale: 0;}
-	40% {scale: 0;}
-	100% {scale: 1;}
-}
-
-@keyframes appear2 {
-  1% {transform: scale(0);}
-  40% {transform: scale(0);}
-  100% {transform: scale(1);}
-}
-
-.moto {
-	padding: 40px;
-  color: #fff;
-
-}
-
-.card-content {
-	opacity: 1;
-}
-
-.card {
-	opacity: 1;
-	color: #fff;
-	position: relative;
-	background: #662668c2;
-	height: 280px;
-	max-width: 600px;
-	margin: auto;
-	border-radius: 10%;
-	margin-top: 10%;
-    text-align: center;
-    font-family: Clip;
-    -webkit-animation: appear2 6s;
-    -moz-animation: appear 6s;
-    -ms-animation: appear2 6s;
-    -o-animation: appear2 6s;
-    animation: appear 6s;
-    animation: appear2 6s;
-}
-
-.card:before {
-	color: #fff;
-	border-radius: 10%;
-	content: '';
-	position: absolute;
-	background: #662668d7;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: 0 4px 8px 0 #0db5df;
-	filter: blur(10px);
-
-}
 
 body {
-	background-attachment: fixed;
-    -webkit-animation: fadeIn 3.4s;
-    -moz-animation: fadeIn 3.4s;
-    -ms-animation: fadeIn 3.4s;
-    -o-animation: fadeIn 3.4s;
-            animation: fadeIn 3.4s;
-    background-color: #351336;
+    margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+    background-image: url(/Assets/img/bg.png);
+    background-size: 400% 400%;
+    -webkit-animation: gradientBG 7s ease infinite;
+    -ms-animation: gradientBG 7s ease infinite;
+    animation: gradientBG 7s ease infinite;    
+}
+
+.center {
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 h1 {
     text-align: center;
-    color: #ff65bd;
-    /* padding: 140px; */
+}
+h2 {
+    padding-left: 5px;
 }
 
-.glow-on-hover {
-  width: 220px;
-  height: 50px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
+.cron {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    transform: translate(-50%, -30%);
+    left: 50%;
+    top: 50%;
+    text-overflow: none;
+    
 }
 
-.glow-on-hover:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  top: -2px;
-  left:-2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
+.addPad {
+    padding-top: 10px;
 }
 
-.glow-on-hover:active {
-  color: #000
+.link {
+    color: #c282ec;
+    font-size: 20px;
+    background-color: #ffffff00;
+    border-radius: 7px;
+    border-color: #9a05df;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.link:hover {
+    animation: shadow 0.5s forwards;
 }
 
-.glow-on-hover:active:after {
-  background: transparent;
+.navbar {
+    position: sticky;
+    background-color: #1c1c1c70;
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.glow-on-hover:hover:before {
-  opacity: 1;
+.navbar-item {
+    color: #c282ec;
+    background-color: #ffffff00;
+    border-radius: 7px;
+    border-color: #9a05df;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
-.glow-on-hover:after {
-  z-index: -1;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
+.navbar-item:hover {
+    animation: shadow 0.5s forwards;
 }
 
-@keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+.currentPage {
+    border-color: #8734f3; 
 }
 
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.project-image {
+    width: 50%;
+    height: auto;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-desc {
+    margin-left: 50px;
+}
+
+@keyframes shadow {
+    100% {
+        box-shadow: 0px 0px 10px #000000;
+    }
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@-webkit-keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@-ms-keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .sign {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 50%;
-  background-image: radial-gradient(
-    ellipse 50% 35% at 50% 50%,
-    #6b1839,
-    transparent
-  );
-  transform: translate(-50%, -50%);
-  letter-spacing: 2;
-  left: 50%;
-  top: 50%;
-  font-family: "Clip";
-  text-transform: uppercase;
-  font-size: 6em;
-  color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-  animation: shine 2s forwards, flicker 3s infinite;
-}
-
-@keyframes blink {
-  0%,
-  22%,
-  36%,
-  75% {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-image: radial-gradient(
+      ellipse 50% 35% at 50% 50%,
+      #6b1839,
+      transparent
+    );
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 6em;
     color: #ffe6ff;
     text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
       -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
       0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
   }
-  28%,
-  33% {
-    color: #ff65bd;
-    text-shadow: none;
+  
+  @keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+    28%,
+    33% {
+      color: #ff65bd;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #ff2483;
+      text-shadow: none;
+    }
   }
-  82%,
-  97% {
-    color: #ff2483;
-    text-shadow: none;
+  
+  .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
   }
-}
-
-.flicker {
-  animation: shine 2s forwards, blink 3s 2s infinite;
-}
-
-.fast-flicker {
-  animation: shine 2s forwards, blink 10s 1s infinite;
-}
-
-@keyframes shine {
-  0% {
-    color: #6b1839;
-    text-shadow: none;
+  
+  .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
   }
-  100% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  
+  @keyframes shine {
+    0% {
+      color: #6b1839;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
   }
-}
-
-@keyframes flicker {
-  from {
-    opacity: 1;
+  
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: 0.9;
+    }
+  
+    6% {
+      opacity: 0.85;
+    }
+  
+    8% {
+      opacity: 0.95;
+    }
+  
+    10% {
+      opacity: 0.9;
+    }
+  
+    11% {
+      opacity: 0.922;
+    }
+  
+    12% {
+      opacity: 0.9;
+    }
+  
+    14% {
+      opacity: 0.95;
+    }
+  
+    16% {
+      opacity: 0.98;
+    }
+  
+    17% {
+      opacity: 0.9;
+    }
+  
+    19% {
+      opacity: 0.93;
+    }
+  
+    20% {
+      opacity: 0.99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: 0.94;
+    }
+  
+    28% {
+      opacity: 0.98;
+    }
+  
+    37% {
+      opacity: 0.93;
+    }
+  
+    38% {
+      opacity: 0.5;
+    }
+  
+    39% {
+      opacity: 0.96;
+    }
+  
+    42% {
+      opacity: 1;
+    }
+  
+    44% {
+      opacity: 0.97;
+    }
+  
+    46% {
+      opacity: 0.94;
+    }
+  
+    56% {
+      opacity: 0.9;
+    }
+  
+    58% {
+      opacity: 0.9;
+    }
+  
+    60% {
+      opacity: 0.99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.9;
+    }
+  
+    72% {
+      opacity: 0.95;
+    }
+  
+    93% {
+      opacity: 0.93;
+    }
+  
+    95% {
+      opacity: 0.95;
+    }
+  
+    97% {
+      opacity: 0.93;
+    }
+  
+    to {
+      opacity: 1;
+    }
   }
-
-  4% {
-    opacity: 0.9;
-  }
-
-  6% {
-    opacity: 0.85;
-  }
-
-  8% {
-    opacity: 0.95;
-  }
-
-  10% {
-    opacity: 0.9;
-  }
-
-  11% {
-    opacity: 0.922;
-  }
-
-  12% {
-    opacity: 0.9;
-  }
-
-  14% {
-    opacity: 0.95;
-  }
-
-  16% {
-    opacity: 0.98;
-  }
-
-  17% {
-    opacity: 0.9;
-  }
-
-  19% {
-    opacity: 0.93;
-  }
-
-  20% {
-    opacity: 0.99;
-  }
-
-  24% {
-    opacity: 1;
-  }
-
-  26% {
-    opacity: 0.94;
-  }
-
-  28% {
-    opacity: 0.98;
-  }
-
-  37% {
-    opacity: 0.93;
-  }
-
-  38% {
-    opacity: 0.5;
-  }
-
-  39% {
-    opacity: 0.96;
-  }
-
-  42% {
-    opacity: 1;
-  }
-
-  44% {
-    opacity: 0.97;
-  }
-
-  46% {
-    opacity: 0.94;
-  }
-
-  56% {
-    opacity: 0.9;
-  }
-
-  58% {
-    opacity: 0.9;
-  }
-
-  60% {
-    opacity: 0.99;
-  }
-
-  68% {
-    opacity: 1;
-  }
-
-  70% {
-    opacity: 0.9;
-  }
-
-  72% {
-    opacity: 0.95;
-  }
-
-  93% {
-    opacity: 0.93;
-  }
-
-  95% {
-    opacity: 0.95;
-  }
-
-  97% {
-    opacity: 0.93;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
+  
