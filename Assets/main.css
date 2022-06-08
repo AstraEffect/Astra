@@ -18,6 +18,37 @@ body {
     margin-bottom: 0px;
 }
 
+.home1 {
+  visibility: hidden;
+}
+
+.home2 {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-shadow: 0px 0px 10px #000;
+}
+.home3 {
+  visibility: hidden;
+  text-shadow: 0px 0px 10px #000;
+  font-size: 40px;
+}
+
+.home4 {
+  visibility: hidden;
+  animation: rainbow 8s infinite ease;
+  font-size: 40px;
+}
+
+.home5 {
+  visibility: hidden;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
 h1 {
     text-align: center;
 }
@@ -107,6 +138,25 @@ h2 {
 
 .project-desc {
     margin-left: 50px;
+}
+
+@keyframes rainbow {
+    0% {
+        text-shadow: 0px 0px 40px #f00;
+    }
+    25% {
+		text-shadow: 0px 0px 40px #ff0;
+	}
+    50% {
+		text-shadow: 0px 0px 40px #0f0;
+    }
+    75% {
+		text-shadow: 0px 0px 40px #00f;
+    }
+	100% {
+		text-shadow: 0px 0px 40px rgb(121, 11, 172);
+	}
+
 }
 
 @keyframes shadow {
