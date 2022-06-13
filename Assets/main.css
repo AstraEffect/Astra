@@ -171,13 +171,18 @@ h2 {
     margin-left: 50px;
 }
 
+.stan {
+  padding-top: 130px;
+    text-align: center;
+}
+
 @keyframes rainbow {
     0% {
         text-shadow: 0px 0px 40px #f00;
     }
     25% {
 		text-shadow: 0px 0px 40px #ff0;
-	}
+  }
     50% {
 		text-shadow: 0px 0px 40px #0f0;
     }
@@ -187,7 +192,6 @@ h2 {
 	100% {
 		text-shadow: 0px 0px 40px rgb(121, 11, 172);
 	}
-
 }
 
 @keyframes shadow {
