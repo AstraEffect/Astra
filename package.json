@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/AhhhSaturn/Astra#readme",
   "dependencies": {
-    "electron": "^17.1.2"
+    "electron": "^17.2.0"
   }
 }
