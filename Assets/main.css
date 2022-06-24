@@ -120,6 +120,28 @@ h2 {
     animation: shadow 0.5s forwards;
 }
 
+.Ahhh_Saturn {
+  text-align: center;
+  font-size: 40px;
+  
+}
+
+.btn-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.btn {
+  align-self: center;
+  width: 50%;
+  padding: 5px;
+  border-radius: 10px;
+  color: #b9b8b9;
+  background-color: #8911ec;
+  border-color: #6931c2;
+}
+
 .navbar {
     position: sticky;
     background-color: #1c1c1c70;
