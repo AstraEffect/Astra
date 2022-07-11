@@ -23,9 +23,8 @@ Check out the [docs](http://docs.atsraeffect.co.uk)
 # BUILDING AND RUNNING FROM SOURCE
 
 run these one by one (npm or yarm is required)
-```
-git clone https://github.com/AstraEffect/Astra
-cd Astra
-npm i
-npm start
-```
+
+```git clone https://github.com/AstraEffect/Astra```
+```cd Astra```
+```npm i```
+```npm start```
