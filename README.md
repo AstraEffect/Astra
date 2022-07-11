@@ -19,3 +19,13 @@ Check out the [docs](http://docs.atsraeffect.co.uk)
 
 \**Astra can be run on windows but it has not been tested and is not directly supported.* <br>
 *Support will not be given untill moved into a further phase ang then an offical executable will be made and distributed.*
+
+# BUILDING AND RUNNING FROM SOURCE
+
+run these one by one (npm or yarm is required)
+```
+git clone https://github.com/AstraEffect/Astra
+cd Astra
+npm i
+npm start
+```
